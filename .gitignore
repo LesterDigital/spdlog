@@ -90,3 +90,4 @@ cmake-build-*/
 # macos
 *.DS_store
 *.xcodeproj/
+Binaries-Int

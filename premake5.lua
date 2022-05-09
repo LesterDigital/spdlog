@@ -8,30 +8,32 @@ project "spdlog"
 
     files
     {
-        "src/**.cpp"
+        "src/**.cpp",
         "include/spdlog/**.h"
+    }
+
+    includedirs
+    {
+        "include"
+    }
+
+    defines
+    {
+        "SPDLOG_COMPILED_LIB"
     }
 
     filter "system:windows"
         systemversion "latest"
 
-        defines
-        {
-            "VAST_PLATFORM_WINDOWS"
-        }
-
     filter "configurations:Debug"
-        defines "VAST_CONFIG_DEBUG"
         runtime "Debug"
         symbols "on"
 
     filter "configurations:Release"
-        defines "VAST_CONFIG_RELEASE"
         runtime "Release"
         optimize "on"
 
     filter "configurations:Distribution"
-        defines "VAST_CONFIG_DISTRIBUTION"
         runtime "Release"
         optimize "on"
 
