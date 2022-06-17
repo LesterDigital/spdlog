@@ -3,8 +3,8 @@ project "spdlog"
     kind "StaticLib"
     staticruntime "on"
 
-    targetdir ("Binaries/" .. outputdir .. "/%{prj.name}")
-    objdir ("Binaries-Int/" .. outputdir .. "/%{prj.name}")
+    targetdir ("../../../Binaries/" .. outputdir .. "/%{prj.name}")
+    objdir ("../../../Binaries-Int/" .. outputdir .. "/%{prj.name}")
 
     files
     {
