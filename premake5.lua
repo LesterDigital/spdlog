@@ -1,7 +1,7 @@
 project "spdlog"
     language "C++"
     kind "StaticLib"
-    staticruntime "on"
+    staticruntime "off"
 
     targetdir ("../../../Binaries/" .. outputdir .. "/%{prj.name}")
     objdir ("../../../Binaries-Int/" .. outputdir .. "/%{prj.name}")
